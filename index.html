@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Общие друзья</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col inputs">
+				<ul>
+					<li class="form-group input-group">
+						<input type="text" class="form-control user-link" placeholder="https://vk.com/user_domain">
+						<button class="btn-remove-input">&times;</button>
+					</li>
+					<li class="form-group input-group">
+						<input type="text" class="form-control user-link" placeholder="https://vk.com/user_domain">
+						<button class="btn-remove-input">&times;</button>
+					</li>
+
+					<button class="btn btn-success btn-add-input">+</button>
+				</ul>
+				<div class="d-flex">
+					<button class="btn btn-primary btn-search" type="button">
+						<span class="spinner-border spinner-border-sm mr-1 d-none" role="status" aria-hidden="true"></span>
+						Поиск
+					</button>
+				</div>				
+			</div>
+			<div class="col">
+				<ul class="mutual-fiends"></ul>
+			</div>
+		</div>
+	</div>
+
+	<script src="Vk.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
